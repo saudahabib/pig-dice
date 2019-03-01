@@ -1,5 +1,5 @@
 .dice{
-  color: white;
+  color: black;
   background-color: aqua;
   text-align: center;
   border-radius: 12%;
@@ -7,4 +7,5 @@
   padding: 5%;
   height: 50%;
   width: 25%;
+  font-size: 2em;
 }
