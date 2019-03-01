@@ -1,8 +1,10 @@
 .dice{
-  color: red;
-  background-color: black;
+  color: white;
+  background-color: aqua;
   text-align: center;
-  border-radius: 2%;
+  border-radius: 12%;
   margin: 5%;
   padding: 5%;
+  height: 50%;
+  width: 25%;
 }
