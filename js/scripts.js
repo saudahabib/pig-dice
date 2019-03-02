@@ -8,10 +8,10 @@ function roll1() {
 
 $(document).ready(function(){
   $("#rol").click(function(){
-    var nax=0;
+    var total=0;
     for(z=0;z<values.length;z++){
       if(values[z]!=1){
-         nax=nax+values[z];
+         total=total+values[z];
       }
       else {
         values.length=0;
