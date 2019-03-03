@@ -4,7 +4,7 @@ var values2=[];
 
 //what shows on dice
 function roll2() {
-  values2.push(document.getElementById('die2').innerHTML= parseInt(Math.random()*6+1));
+  values2.push(document.getElementById('die2').innerHTML= Math.floor(Math.random()*6+1));
 }
 //disabling a button
 function disable2()  {
@@ -70,10 +70,3 @@ $(document).ready(function(){
   });
 
 });
-
-//calculate total score here
-
-
-// function roll2() {
-//   document.getElementById('die2').innerHTML= parseInt(Math.random()*6+1);
-// }
