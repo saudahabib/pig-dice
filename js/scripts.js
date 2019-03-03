@@ -1,9 +1,10 @@
 //UI LOGIC BEGINS HERE
  var total2=0
  var values2=[];
+ var holdValue= [];
 
  //what shows on dice
- function roll2() {
+ function roll2(){
    values2.push(document.getElementById('die2').innerHTML= Math.floor(Math.random()*6+1));
  }
  //disabling a button
@@ -68,3 +69,10 @@ $(document).ready(function(){
   });
 
 });
+
+if(values2===100) {
+  alert("Player 2 wins the game")
+}
+else if(values===100) {
+  alert("Player 1 wins the game")
+}
