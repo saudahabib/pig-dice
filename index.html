@@ -21,17 +21,18 @@
           <div class="dice">
             <p id="die1"></p>
           </div>
-
-          <button id="rol" class="btn btn-success" type="button" name="button" onclick="roll1()">Roll dice</button><br><br>
-          <button class="btn btn-danger"type="button" name="button" onclick="hold1()">Stop rolling</button>
+<!-- player1 buttons-->
+          <button id="roll1" class="btn btn-success" type="button" name="button" onclick="roll1()">Roll dice</button><br><br>
+          <button id="stop1" class="btn btn-danger"type="button" name="button" onclick="disable1(),enable2()">Stop rolling</button>
         </div>
         <div class="col-md-6">
           <h2>Player2</h2>
           <div class="dice" id="die2">
 
           </div>
-          <button class="btn btn-success"type="button" name="button" onclick="roll2()">Roll dice</button><br><br>
-          <button class="btn btn-danger"type="button" name="button" onclick="hold2()">Stop rolling</button>
+<!-- player2 buttons -->
+          <button id="roll2" class="btn btn-success"type="button" name="button" onclick="roll2()">Roll dice</button><br><br>
+          <button id="stop2" class="btn btn-danger"type="button" name="button" onclick="enable1(), disable2()">Stop rolling</button>
         </div>
       </div>
     </div>
