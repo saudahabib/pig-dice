@@ -74,6 +74,6 @@ $(document).ready(function(){
 //calculate total score here
 
 
-function roll2() {
-  document.getElementById('die2').innerHTML= parseInt(Math.random()*6+1);
-}
+// function roll2() {
+//   document.getElementById('die2').innerHTML= parseInt(Math.random()*6+1);
+// }
