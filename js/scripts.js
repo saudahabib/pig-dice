@@ -1,3 +1,4 @@
+//UI LOGIC BEGINS HERE
  var total2=0
  var values2=[];
 
@@ -13,7 +14,23 @@
  function enable2() {
    document.getElementById('roll2').disabled=false;
  }
+ var total=0
+ var values=[];
 
+ //what shows on dice
+ function roll1() {
+   values.push(document.getElementById('die1').innerHTML= parseInt(Math.random()*6+1));
+ }
+ //disabling a button
+ function disable1()  {
+ document.getElementById('roll1').disabled=true;
+ };
+ // enabling same button
+ function enable1() {
+   document.getElementById('roll1').disabled=false;
+ }
+
+//BUSINESS LOGIC BEGINS HERE
  //calculating cumulative score 2
  $(document).ready(function()  {
    $('#roll2').click(function()  {
@@ -32,40 +49,22 @@
      alert('Your current score is'+' '+ total2)
    });
  });
+//calculating cumulative score 1
+$(document).ready(function(){
+  $("#roll1").click(function(){
+    var total=0;
+    for(var z=0;z<values.length;z++){
+      if(values[z]!=1){
+         total=total+values[z];
+      }
+      else {
+        values.length=0;
+        disable1();
+        enable2();
+      }
+    };
 
-//PLAYER 1
-var total=0
-var values=[];
+    alert('Your current score is'+' '+total)
+  });
 
-//what shows on dice
-// function roll1() {
-//   values.push(document.getElementById('die1').innerHTML= parseInt(Math.random()*6+1));
-// }
-// //disabling a button
-// function disable1()  {
-// document.getElementById('roll1').disabled=true;
-// };
-// // enabling same button
-// function enable1() {
-//   document.getElementById('roll1').disabled=false;
-// }
-//
-// //calculating cumulative score 1
-// $(document).ready(function(){
-//   $("#roll1").click(function(){
-//     var total=0;
-//     for(var z=0;z<values.length;z++){
-//       if(values[z]!=1){
-//          total=total+values[z];
-//       }
-//       else {
-//         values.length=0;
-//         disable1();
-//         enable2();
-//       }
-//     };
-//
-//     alert('Your current score is'+' '+total)
-//   });
-//
-// });
+});
