@@ -9,3 +9,23 @@
   width: 25%;
   font-size: 2em;
 }
+
+.homepage{
+  background-image: url('https://thumbs.gfycat.com/CompleteCornyGalago-max-1mb.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.opacity{
+  border-radius: 12%;
+  opacity: 0.7;
+  box-shadow: 4px 4px 5px silver;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+.large{
+  font-size: 3em;
+  color: white;
+  font-family:
+}
