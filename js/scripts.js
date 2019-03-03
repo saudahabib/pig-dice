@@ -17,7 +17,7 @@ function enable2() {
 
 //calculating cumulative score 2
 $(document).ready(function()  {
-  $('button#roll2').click(function()  {
+  $('#roll2').click(function()  {
     var total2=0;
     for(var y=0; y<values2.length; y++) {
       if(values2[y]!=1)  {
@@ -25,6 +25,8 @@ $(document).ready(function()  {
       }
       else{
         values2.length=0
+        disable2();
+        enable1();
       }
     };
 
@@ -59,6 +61,8 @@ $(document).ready(function(){
       }
       else {
         values.length=0;
+        disable1();
+        enable2();
       }
     };
 
