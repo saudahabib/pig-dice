@@ -1,38 +1,38 @@
-//PLAYER 2
-var total2=0
-var values2=[];
-
-//what shows on dice
-function roll2() {
-  values2.push(document.getElementById('die2').innerHTML= Math.floor(Math.random()*6+1));
-}
-//disabling a button
-function disable2()  {
-document.getElementById('roll2').disabled=true;
-};
-// enabling same button
-function enable2() {
-  document.getElementById('roll2').disabled=false;
-}
-
-//calculating cumulative score 2
-$(document).ready(function()  {
-  $('#roll2').click(function()  {
-    var total2=0;
-    for(var y=0; y<values2.length; y++) {
-      if(values2[y]!=1)  {
-        total2=total2+values[y]
-      }
-      else{
-        values2.length=0
-        disable2();
-        enable1();
-      }
-    };
-
-    alert('Your current score is'+' '+ total2)
-  });
-});
+// //PLAYER 2
+// var total2=0
+// var values2=[];
+//
+// //what shows on dice
+// function roll2() {
+//   values2.push(document.getElementById('die2').innerHTML= Math.floor(Math.random()*6+1));
+// }
+// //disabling a button
+// function disable2()  {
+// document.getElementById('roll2').disabled=true;
+// };
+// // enabling same button
+// function enable2() {
+//   document.getElementById('roll2').disabled=false;
+// }
+//
+// //calculating cumulative score 2
+// $(document).ready(function()  {
+//   $('#roll2').click(function()  {
+//     var total2=0;
+//     for(var y=0; y<values2.length; y++) {
+//       if(values2[y]!=1)  {
+//         total2=total2+values[y]
+//       }
+//       else{
+//         values2.length=0
+//         disable2();
+//         enable1();
+//       }
+//     };
+//
+//     alert('Your current score is'+' '+ total2)
+//   });
+// });
 
 //PLAYER 1
 var total=0
