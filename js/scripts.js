@@ -4,7 +4,7 @@ var values2=[];
 
 //what shows on dice
 function roll2() {
-  values.push(document.getElementById('die2').innerHTML= parseInt(Math.random()*6+1));
+  values2.push(document.getElementById('die2').innerHTML= parseInt(Math.random()*6+1));
 }
 //disabling a button
 function disable2()  {
