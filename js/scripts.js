@@ -39,6 +39,11 @@
 //BUSINESS LOGIC BEGINS HERE
 //Calculating cumulative score for player 2
 $(document).ready(function(){
+  $('form.sauda').submit(function(event)  {
+      event.preventDefault();
+      $('#main').show();
+  });
+
   $("#roll2").click(function(){
 
      total2=0;
