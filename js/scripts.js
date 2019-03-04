@@ -46,7 +46,7 @@
          enable1();
        }
      };
-
+     $('.status2').text(values2)
      alert('Your current score is'+' '+ total2)
    });
  });
@@ -64,7 +64,7 @@ $(document).ready(function(){
         enable2();
       }
     };
-
+    $('.status1').text(values);
     alert('Your current score is'+' '+total)
   });
 

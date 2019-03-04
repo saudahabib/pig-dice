@@ -8,24 +8,31 @@
   height: 50%;
   width: 25%;
   font-size: 2em;
+  box-shadow: 7px 7px 5px silver;
 }
 
 .homepage{
-  background-image: url('https://thumbs.gfycat.com/CompleteCornyGalago-max-1mb.gif');
+  background-image: url('http://hd.wallpaperswide.com/thumbs/3d_dice_06-t2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 
 }
 .opacity{
-  border-radius: 12%;
-  opacity: 0.7;
-  box-shadow: 4px 4px 5px silver;
   text-align: center;
   font-size: 2em;
   color: white;
 }
 .large{
   font-size: 3em;
-  color: white;
-  font-family:
+  color: black;
+  font-family:'Nova Script', serif;
+  opacity: 0.7;
+  box-shadow: 4px 4px 5px silver;
+  background-color: silver;
+}
+body{
+  font-family: 'Nova Script', serif;
+}
+.jumbotron{
+  background-color: silver;
 }

@@ -19,44 +19,54 @@
         </div><br><br>
         <form class="">
           <input type="text" name="" value="" placeholder="Player 1 name"><br><br>
-          <input type="text" name="" value="" placeholder="Player 1 name"><br><br>
+          <input type="text" name="" value="" placeholder="Player 2 name"><br><br>
           <button type="submit" name="button">Play Game</button>
         </form>
       </div>
     </div>
+    <div class="main">
+      <div class="jumbotron">
+        <h1>PIG DICE GAME INSTRUCTIONS</h1>
+        <ul>
+          <li>Players will take turns to roll the die.</li>
+          <li>You can only stop rolling if you click the 'hold' button.</li>
+          <li>Your score for a particular round will go to 0 if the die lands on 1.</li>
+          <li>This is a cue for player 2 to start playing</li>
+          <li>The game ends when one of the players gets to 100 points first.</li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Player1</h2>
 
-    <div class="jumbotron">
-      <h1>PIG DICE GAME INSTRUCTIONS</h1>
-      <ul>
-        <li>Players will take turns to roll the die.</li>
-        <li>You can only stop rolling if you click the 'hold' button.</li>
-        <li>Your score for a particular round will go to 0 if the die lands on 1.</li>
-        <li>This is a cue for player 2 to start playing</li>
-        <li>The game ends when one of the players gets to 100 points first.</li>
-      </ul>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Player1</h2>
+            <div class="dice">
+              <p id="die1"></p>
+            </div>
+  <!-- player1 buttons-->
+            <button id="roll1" class="btn btn-success" type="button" name="button" onclick="roll1()">Roll dice</button>
+            <button id="stop1" class="btn btn-danger"type="button" name="button" onclick="disable1(),enable2()">Stop rolling</button>
 
-          <div class="dice">
-            <p id="die1"></p>
+            <div class="status1">
+              Your scores are as follows:
+            </div>
           </div>
-<!-- player1 buttons-->
-          <button id="roll1" class="btn btn-success" type="button" name="button" onclick="roll1()">Roll dice</button><br><br>
-          <button id="stop1" class="btn btn-danger"type="button" name="button" onclick="disable1(),enable2()">Stop rolling</button>
-        </div>
-        <div class="col-md-6">
-          <h2>Player2</h2>
-          <div class="dice" id="die2">
+          <div class="col-md-6">
+            <h2>Player2</h2>
+            <div class="dice" id="die2">
+
+            </div>
+  <!-- player2 buttons -->
+            <button id="roll2" class="btn btn-success"type="button" name="button" onclick="roll2()">Roll dice</button>
+            <button id="stop2" class="btn btn-danger"type="button" name="button" onclick="enable1(), disable2()">Stop rolling</button>
+            <div class="status2">
+              Your scores are as follows:
+            </div>
 
           </div>
-<!-- player2 buttons -->
-          <button id="roll2" class="btn btn-success"type="button" name="button" onclick="roll2()">Roll dice</button><br><br>
-          <button id="stop2" class="btn btn-danger"type="button" name="button" onclick="enable1(), disable2()">Stop rolling</button>
         </div>
       </div>
     </div>
+
   </body>
 </html>
