@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js"></script>
+    <!-- <script src="js/scripts-fuaad.js"></script>
+    <script src="js/trial.js"></script> -->
     <script src="js/scripts.js"></script>
 
   </head>
@@ -39,29 +41,40 @@
         <div class="row">
           <div class="col-md-6">
             <h2>Player1</h2>
-
+            <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/gamer-3-618527.png" alt="gamer1" style="float:right; width:20%">
+          </div>
+          <div class="col-md-6">
+            <h2>Player2</h2>
+            <img src="https://cdn1.iconfinder.com/data/icons/games-outline/512/gamer-512.png" alt="gamer2" style="float:right; width:20%">
+          </div>
+        </div>
+        <hr style="size:50">
+        <div class="row">
+          <div class="col-md-6">
             <div class="dice">
               <p id="die1"></p>
             </div>
   <!-- player1 buttons-->
             <button id="roll1" class="btn btn-success" type="button" name="button" onclick="roll1()">Roll dice</button>
-            <button id="stop1" class="btn btn-danger"type="button" name="button" onclick="disable1(),enable2()">Stop rolling</button>
-
-            <div class="status1">
-              Your scores are as follows:
+            <button id="stop1" class="btn btn-danger"type="button" name="button" onclick="disable1(),enable2()">Stop rolling</button><hr width="1" height="300">
+            Round Score:<span class="status1"></span> <br>
+            Total score: <span id="fuaad1"></span><br>
+            Final Score: <span id="finale1"></span><br>
+            Final Game Score: <span id="lit1"></span>
             </div>
-          </div>
+
           <div class="col-md-6">
-            <h2>Player2</h2>
+
             <div class="dice" id="die2">
 
             </div>
   <!-- player2 buttons -->
             <button id="roll2" class="btn btn-success"type="button" name="button" onclick="roll2()">Roll dice</button>
-            <button id="stop2" class="btn btn-danger"type="button" name="button" onclick="enable1(), disable2()">Stop rolling</button>
-            <div class="status2">
-              Your scores are as follows:
-            </div>
+            <button id="stop2" class="btn btn-danger"type="button" name="button" onclick="enable1(), disable2()">Stop rolling</button> <br><br>
+            Round score:<span class="status2"></span><br>
+            Total score: <span id="fuaad2"></span><br>
+            Final roundScore: <span id="finale2"></span><br>
+            Final Game Score: <span id="lit2"></span>
 
           </div>
         </div>
