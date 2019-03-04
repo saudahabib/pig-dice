@@ -7,6 +7,10 @@
  var heldTotal2= [];
  var finalScore1= 0;
  var finalScore2= 0;
+ function Player(username)  {
+   this.username= username;
+
+ }
 
  //what shows on dice
  function roll2(){
@@ -40,8 +44,20 @@
 //Calculating cumulative score for player 2
 $(document).ready(function(){
   $('form.sauda').submit(function(event)  {
+      var player1 = $("#player1").val();
+      var player2 = $("#player2").val();
+
+      var p1 = new Player(player1);
+      var p2 = new Player(player2);
+      $("#play1").text(p1.username);
+      $("#play2").text(p2.username);
       event.preventDefault();
       $('#main').show();
+      $('.homepage').hide();
+
+
+
+
   });
 
   $("#roll2").click(function(){
@@ -55,6 +71,7 @@ $(document).ready(function(){
         values2.length=0;
         disable2();
         enable1();
+        alert('Oops! You hit a 1. Pass to the next player.')
       }
     };
     $('.status2').text(values2);
@@ -79,10 +96,17 @@ addScores2();
 
    values2= [];
 
-   if(finalScore2>=100) {
+   if(finalScore2>=10) {
+    $('#gameResults').show();
+    $('#main').hide()
 
-    return alert("You win!")
 
+    // var player1 = $("#player1").val();
+    // var player2 = $("#player2").val();
+    //
+    // var p1 = new Player(player1);
+    // var p2 = new Player(player2);
+    // document.getElementById('winner').text(p2)
    }
  })
 });
@@ -99,6 +123,7 @@ $(document).ready(function(){
         values1.length=0;
         disable1();
         enable2();
+        alert("Oops! You hit a 1. Pass to next player.")
       }
     };
     $('.status1').text(values1);
@@ -120,10 +145,18 @@ addScores1();
 
    values1= [];
 
-   if(finalScore2>=100) {
+   if(finalScore1>=10) {
+    $('#gameResults').show();
+    $('#main').hide()
 
-    return alert("You win!")
+
+    // var player1 = $("#player1").val();
+    // var player2 = $("#player2").val();
+    //
+    // var p1 = new Player(player1);
+    // var p2 = new Player(player2);
+    //  document.getElementById('winner').text(p2)
 
    }
- })
+ });
 });
