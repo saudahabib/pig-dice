@@ -1,6 +1,7 @@
 .dice{
-  color: black;
-  background-color: pink;
+  color: white;
+  display: flex;
+  align-items: center;
   text-align: center;
   border-radius: 12%;
   margin: 5%;
@@ -9,6 +10,7 @@
   width: 25%;
   font-size: 2em;
   box-shadow: 7px 7px 5px silver;
+  background-color: black;
 }
 
 .homepage{
@@ -35,13 +37,32 @@ body{
   font-family: 'Major Mono Display', serif;
 }
 .jumbotron{
-  background-color: silver;
+  background-image: linear-gradient(to left bottom, #161016, #3c3d56, #3f78a0, #00badb, #11fff5);
 }
 #main{
   display: none;
 }
-.left, .right{
-  background-color: black;
-  color: white;
-  border: 12px solid silver;
+.right{
+  background-image: linear-gradient(to left bottom, #11fff5, #00badb, #3f78a0, #3c3d56, #161016);
+  color: black;
+  border: 2px solid silver;
+  box-shadow: 4px 4px 5px solid gray;
+
+}
+.left{
+  background-image: linear-gradient(to right top, #11fff5, #00badb, #3f78a0, #3c3d56, #161016);
+  color: black;
+  border: 2px solid silver;
+  box-shadow: -4px -4px 5px solid gray;
+}
+#colors{
+background-image: linear-gradient(to left bottom, #161016, #3c3d56, #3f78a0, #00badb, #11fff5);
+}
+#winMessage{
+  font-size: 2em;
+  font-family: 'Pacifico', serif;
+  text-align: center;
+}
+#gameResults{
+  display: none;
 }
