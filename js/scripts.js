@@ -10,6 +10,8 @@
  function Player(username)  {
    this.username= username;
  };
+ var p1 = "";
+ var p2 = "";
 
  //what shows on dice
  function roll2(){
@@ -46,8 +48,8 @@ $(document).ready(function(){
       var player1 = $("#player1").val();
       var player2 = $("#player2").val();
 
-      var p1 = new Player(player1);
-      var p2 = new Player(player2);
+      p1 = new Player(player1);
+      p2 = new Player(player2);
       $("#play1").text(p1.username);
       $("#play2").text(p2.username);
       event.preventDefault();
@@ -92,6 +94,8 @@ addScores2();
    if(finalScore2>=100) {
     $('#gameResults').show();
     $('#main').hide()
+    $('#winnerName').text(p2.username);
+
 
    }
  })
@@ -133,7 +137,8 @@ addScores1();
 
    if(finalScore1>=100) {
     $('#gameResults').show();
-    $('#main').hide()
+    $('#main').hide();
+    $('#winnerName').text(p1.username);
 
   };
  });
