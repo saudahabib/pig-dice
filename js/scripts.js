@@ -89,17 +89,10 @@ addScores2();
 
    values2= [];
 
-   if(finalScore2>=10) {
+   if(finalScore2>=100) {
     $('#gameResults').show();
     $('#main').hide()
 
-
-    // var player1 = $("#player1").val();
-    // var player2 = $("#player2").val();
-    //
-    // var p1 = new Player(player1);
-    // var p2 = new Player(player2);
-    // document.getElementById('winner').text(p2)
    }
  })
 });
@@ -138,7 +131,7 @@ addScores1();
 
    values1= [];
 
-   if(finalScore1>=10) {
+   if(finalScore1>=100) {
     $('#gameResults').show();
     $('#main').hide()
 
