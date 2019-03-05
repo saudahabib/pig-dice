@@ -1,5 +1,5 @@
-# Quiz Board Project
-### Week 3 project at MPFT. The project is a quiz board which displays test questions for a school computer club. Questions are marked and results awarded respectively by the application. (1.03.2019)
+# Pig Dice Project
+### Fourth Independent Project at Moringa Prep. This is a dice game that is traditionally played by two people. The game involves rolling dice until one player reaches 100+ after which he/she is declared a winner. However, some rules are followed in order to win the game. (5.03.2019)
 ### By Sauda Habib
 #### Description
 This is a game in which two players take turn in rolling a die. The winner is declared when one player reaches 100 points before the other. A player can play for as many rounds as he wants unless he clicks the hold button or his die lands at the value(1) at which point the second player is prompted to play. The game calculates the cumulative scores of each player and alerts them when one reaches the winning point.
