@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js"></script>
-    <!-- <script src="js/scripts-fuaad.js"></script>
-    <script src="js/trial.js"></script> -->
     <script src="js/scripts.js"></script>
-
   </head>
   <body>
     <div class="homepage">
@@ -69,59 +66,57 @@
             </div>
 
 
-        </div>
-        <hr style="size:50">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="left">
-              <div class="dice">
-                <p id="die1"></p>
-              </div>
+            </div>
+              <hr style="size:50">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="left">
+                    <div class="dice">
+                      <p id="die1"></p>
+                    </div>
     <!-- player1 buttons-->
-              <div class="buttons">
-                <button id="roll1" class="btn btn-primary" type="button" name="button" onclick="roll1()">Roll dice</button>
-                <button id="stop1" class="btn btn-danger"type="button" name="button" onclick="disable1(),enable2()">Stop rolling</button>
-              </div>
-            <!-- <hr width="1"> -->
-            <br><br>
-              <p>Round Score:<span class="status1"></span></p>
-              <p>  Total score: <span id="fuaad1"></span></p>
-              <p>Final Score: <span id="finale1"></span></p>
-              <p>  Final Game Score: <span id="lit1"></span></p><br>
-              </div>
-            </div>
+                    <div class="buttons">
+                      <button id="roll1" class="btn btn-primary" type="button" name="button" onclick="roll1()">Roll dice</button>
+                      <button id="stop1" class="btn btn-danger"type="button" name="button" onclick="disable1(),enable2()">Stop rolling</button>
+                    </div>
+                   <br><br>
+                      <p>Round Score:<span class="status1"></span></p>
+                      <p>  Total score: <span id="fuaad1"></span></p>
+                      <p>Final Score: <span id="finale1"></span></p>
+                      <p>  Final Game Score: <span id="lit1"></span></p><br>
+                    </div>
+                  </div>
 
 
-          <div class="col-md-6">
-            <div class="right">
-              <div class="dice">
-                <p id="die2"></p>
-              </div>
+                  <div class="col-md-6">
+                    <div class="right">
+                      <div class="dice">
+                        <p id="die2"></p>
+                      </div>
             <!-- player2 buttons -->
-            <div class="buttons">
-              <button id="roll2" class="btn btn-primary"type="button" name="button" onclick="roll2()">Roll dice</button>
-              <button id="stop2" class="btn btn-danger"type="button" name="button" onclick="enable1(), disable2()">Stop rolling</button>
-            </div>
- <br><br>
+                      <div class="buttons">
+                        <button id="roll2" class="btn btn-primary"type="button" name="button" onclick="roll2()">Roll dice</button>
+                        <button id="stop2" class="btn btn-danger"type="button" name="button" onclick="enable1(), disable2()">Stop rolling</button>
+                      </div>
+                      <br><br>
 
-                <p>Round score:<span class="status2"></span></p>
-                <p>Total score: <span id="fuaad2"></span></p>
-                <p>Final roundScore: <span id="finale2"></span></p>
-                <p>Final Game Score: <span id="lit2"></span></p><br>
+                        <p>Round score:<span class="status2"></span></p>
+                        <p>Total score: <span id="fuaad2"></span></p>
+                        <p>Final roundScore: <span id="finale2"></span></p>
+                        <p>Final Game Score: <span id="lit2"></span></p><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="gameResults">
+                <div class="card-body">
+                  <h2 class="card-title" id="winMessage">Congratulations <span ></span>. You won the game!</h2>
+                </div>
+                <img class="card-img-top" src="
+                https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif
+                " alt="fire" height="530px">
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="card" id="gameResults">
-        <div class="card-body">
-          <h2 class="card-title" id="winMessage">Congratulations <span ></span>. You won the game!</h2>
-        </div>
-        <img class="card-img-top" src="
-https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif
-" alt="fire" height="530px">
-
-      </div>
-    </div>
   </body>
 </html>

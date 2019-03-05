@@ -57,7 +57,7 @@ body{
   box-shadow: -4px -4px 5px solid gray;
 }
 #colors{
-background-image: linear-gradient(to left bottom, #161016, #3c3d56, #3f78a0, #00badb, #11fff5);
+  background-image: linear-gradient(to left bottom, #161016, #3c3d56, #3f78a0, #00badb, #11fff5);
 }
 #winMessage{
   font-size: 3em;
