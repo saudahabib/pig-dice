@@ -40,6 +40,7 @@ body{
   background-image: linear-gradient(to left bottom, #161016, #3c3d56, #3f78a0, #00badb, #11fff5);
 }
 #main{
+  font-size: 1.6em;
   display: none;
 }
 .right{
