@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class= "card-body">
-                  Player1 name: <span id='play1'></span>
+                  Player 1 name: <br><span id='play1' style="font-size:2.3em; font-family: 'Pacifico'"></span>
                 </div>
               </div>
 
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class= "card-body">
-                  Player2 name: <span id='play2'></span>
+                  Player2 name: <br><span id='play2' style="font-size:2.3em; font-family: 'Pacifico'"></span>
                 </div>
               </div>
             </div>
@@ -82,19 +82,20 @@
                 <button id="roll1" class="btn btn-success" type="button" name="button" onclick="roll1()">Roll dice</button>
                 <button id="stop1" class="btn btn-danger"type="button" name="button" onclick="disable1(),enable2()">Stop rolling</button>
               </div>
-            <hr width="1">
+            <!-- <hr width="1"> -->
+            <br><br>
               <p>Round Score:<span class="status1"></span></p>
               <p>  Total score: <span id="fuaad1"></span></p>
               <p>Final Score: <span id="finale1"></span></p>
-              <p>  Final Game Score: <span id="lit1"></span></p>
+              <p>  Final Game Score: <span id="lit1"></span></p><br>
               </div>
             </div>
 
 
           <div class="col-md-6">
             <div class="right">
-              <div class="dice" id="die2">
-
+              <div class="dice">
+                <p id="die2"></p>
               </div>
             <!-- player2 buttons -->
             <div class="buttons">
@@ -108,8 +109,6 @@
                 <p>Final roundScore: <span id="finale2"></span></p>
                 <p>Final Game Score: <span id="lit2"></span></p><br>
             </div>
-
-
           </div>
         </div>
       </div>
