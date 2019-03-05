@@ -60,9 +60,23 @@ body{
 background-image: linear-gradient(to left bottom, #161016, #3c3d56, #3f78a0, #00badb, #11fff5);
 }
 #winMessage{
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'Pacifico', serif;
   text-align: center;
+  animation: typing 5s steps(35);
+  white-space: nowrap;
+  background: -webkit-linear-gradient(#7E0D7E, #E17B38);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+@keyframes typing  {
+  from{
+    width: 0;
+  }
+  to{
+    width: 35ch;
+  }
 }
 #gameResults{
   display: none;
